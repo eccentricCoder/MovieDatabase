@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles\styles.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header role="banner" class="mainHeader">
+            <nav role="navigation">
+                <asp:HyperLink ID="lnkMain" Text="Web Forms Movie" NavigateUrl="Default.aspx" runat="server" CssClass="logo"></asp:HyperLink>
+                <ul class="mainNav">
+                  <li><asp:HyperLink ID="Movies" Text="Main" NavigateURl="Default.aspx" runat="server"></asp:HyperLink></li>
+                  <li><asp:HyperLink ID="About" Text="About" NavigateUrl="About.aspx" runat="server"></asp:HyperLink></li>
+                  <li><asp:HyperLink ID="Contact" Text="Contact" NavigateUrl="Contact.aspx" runat="server"></asp:HyperLink></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainContent">
+            <asp:ContentPlaceHolder id="Main" runat="server">     
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer role="contentinfo">
+            <p><small>&copy copyright 2015</small></p>
+        </footer>
+    </form>
+</body>
+</html>

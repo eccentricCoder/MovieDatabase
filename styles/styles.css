@@ -1,0 +1,212 @@
+﻿/* ::: HTML5 display definitions ::: */
+/*
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+	font-size: 100%;
+	background-color: #DCDCDC;
+	color: #000;
+	/*font-weight: bold;*/
+	font-family: Verdana, Geneva, sans-serif;
+    
+	/**
+ * Remove default margin.
+ */
+	margin: 0;
+	
+}
+
+.mainContent {
+   padding-top: 5em;
+   margin-left:15%;
+   margin-right:15%;
+   width: 60%;
+}
+
+/* GLOBAL NAVIGATION
+---------------------------------------*/
+.mainHeader {
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	padding: 1.2em;
+	margin: 0;
+   position: fixed;
+	width: 100%;
+    top: 0;
+}
+
+.logo {
+	font-size: 2em;
+	margin: 0 0 5px 0;              /* margin-top: 0; margin-right: 0; margin-bottom: 5px; margin-left: 0; */
+	padding: 0 0 0 20%;			/* padding-top, padding-right, paddint-bottom, 	padding-left */
+    float: left;
+}
+
+.logo:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.logo:link{ 
+	color: white;
+	text-decoration: none;
+}
+
+.logo:focus
+{
+	color: White;
+	text-decoration: none;
+}
+
+/* Changes the links appearance when the mouse is hovering
+ * over the link.*/
+.logo:hover
+ {
+	color: white;
+	text-decoration: none;
+}
+
+.logo:active {
+	color: white;
+	text-decoration: none;
+}
+
+.mainNav {
+	padding: 0;
+    padding-right: 35%;
+	font-size: 1.15em;
+	font-weight: bold;
+	list-style: none;
+ 	margin: 0;
+}
+
+.mainNav  li  {
+	display: inline-block;
+	
+	vertical-align: middle;
+	
+	/* border-left: 2px solid #00f */
+	/*background-color: #fff;*/
+}
+
+.mainNav  li:first-child {
+	border-left: none;
+}
+
+.mainNav  a { 
+	text-transform: uppercase;
+	display: inline-block; 
+	padding: 0.6em 1em 0.6em 1em;
+}
+
+/* Changes the appearance of links that haven't been
+ * or aren't currently being activated or point at.
+ */
+.mainNav a:link { 
+	color: grey;
+	text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Changes the links that the visitor has already activated.*/
+.mainNav a:visited {
+	color: grey;
+	text-decoration: none;
+}
+
+/* If the link is selected via the keyboard and is ready 
+ * to be activated. Focus also happens when a link is active.
+ */
+.mainNav a:focus {
+	color: White;
+	text-decoration: none;
+}
+
+/* Changes the links appearance when the mouse is hovering
+ * over the link.*/
+.mainNav a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.mainNav a:active {
+	color: white;
+	text-decoration: none;
+}
+
+table, th, td {
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid black;
+}
+
+table {
+    border-left:none;
+    border-right:none;
+}
+th {
+    background-color: silver;
+    border-right: none;
+    border-left: none;
+}
+
+td {
+    /*padding: 0.75em;*/
+    padding-left:1.95em;
+    padding-right: 1.95em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border-right: none;
+    border-left: none;
+}
+
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+  .dl-horizontal dd:before,
+  .dl-horizontal dd:after {
+    display: table;
+    content: " ";
+  }
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+  .dl-horizontal dd:before,
+  .dl-horizontal dd:after {
+    display: table;
+    content: " ";
+  }
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+}
+
+footer {
+    padding-top: 5em;
+   margin-left:15%;
+   margin-right:15%;
+   width: 60%;
+}
